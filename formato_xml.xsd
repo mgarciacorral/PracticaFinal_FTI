@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Definición de tipos -->
+    <xs:simpleType name="tipo_UID">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo_rol">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="responsable de área|técnico"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo_ID_atraccion">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(PLA|TFW|PIR|CCL|FUT)-\d{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo_ID_area">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="PLA"/>
+            <xs:enumeration value="TFW"/>
+            <xs:enumeration value="PIR"/>
+            <xs:enumeration value="CCL"/>
+            <xs:enumeration value="FUT"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo_estado">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Operativa"/>
+            <xs:enumeration value="En obras"/>
+            <xs:enumeration value="Cerrada"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo_altura">
+        <xs:restriction base="xs:float"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo_altura_minima">
+        <xs:restriction base="tipo_altura">
+            <xs:minInclusive value="0.80"/>
+            <xs:maxInclusive value="1.40"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo_altura_maxima">
+        <xs:restriction base="tipo_altura">
+            <xs:minInclusive value="1.20"/>
+            <xs:maxInclusive value="1.95"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo_tipoAtraccion">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="atracción giratoria"/>
+            <xs:enumeration value="montaña rusa"/>
+            <xs:enumeration value="atracción acuática"/>
+            <xs:enumeration value="atracción"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo_intensidad">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Infantil"/>
+            <xs:enumeration value="Suave"/>
+            <xs:enumeration value="Moderado"/>
+            <xs:enumeration value="Intenso"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo_express">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Si"/>
+            <xs:enumeration value="No"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Definición de elementos -->
+    <xs:element name="parque_tematico" type="tipo_parque"/>
+
+    <xs:complexType name="tipo_parque">
+        <xs:sequence>
+            <xs:element name="empleados" type="tipo_empleados" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="areas" type="tipo_areas" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipo_areas">
+        <xs:sequence>
+            <xs:element name="area" type="tipo_area" minOccurs="5" maxOccurs="5"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipo_empleados">
+        <xs:sequence>
+            <xs:element name="empleado" type="tipo_empleado" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipo_empleado">
+            <xs:attribute name="UID" type="tipo_UID" use="required"/>
+            <xs:attribute name="rol" type="tipo_rol" use="required"/>
+            <xs:attribute name="area" type="tipo_ID_area" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipo_area">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="decoracion" type="xs:string"/>
+            <xs:element name="atraccion" type="tipo_atraccion" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="ID" type="tipo_ID_area" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipo_atraccion">
+        <xs:sequence>
+            <xs:element name="nombre_atraccion" type="xs:string"/>
+            <xs:element name="estado" type="tipo_estado"/>
+            <xs:element name="altura_minima" type="tipo_altura_minima" minOccurs="0"/>
+            <xs:element name="altura_maxima" type="tipo_altura_maxima" minOccurs="0"/>
+            <xs:element name="intensidad" type="tipo_intensidad"/>
+            <xs:element name="express" type="tipo_express"/>
+            <xs:element name="datos_tecnicos" type="tipo_datosTecnicos"/>
+        </xs:sequence>
+        <xs:attribute name="ID" type="tipo_ID_atraccion" use="required"/>
+        <xs:attribute name="tipo" type="tipo_tipoAtraccion" default="atracción"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipo_datosTecnicos">
+            <xs:attribute name="fecha_ultima_revision" type="xs:date"/>
+            <xs:attribute name="clave_mantenimiento" type="xs:string" use="required"/>
+    </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parque_tematico xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ej1.xsd">
+    <empleados>
+        <empleado UID="0000" rol="responsable de área" area="PLA"></empleado>
+        <empleado UID="0001" rol="responsable de área" area="TFW"></empleado>
+        <empleado UID="0002" rol="responsable de área" area="PIR"></empleado>
+        <empleado UID="0003" rol="responsable de área" area="CCL"></empleado>
+        <empleado UID="0004" rol="responsable de área" area="FUT"></empleado>
+        <empleado UID="0005" rol="técnico" area="PLA"></empleado>
+        <empleado UID="0006" rol="técnico" area="PLA"></empleado>
+        <empleado UID="0007" rol="técnico" area="TFW"></empleado>
+        <empleado UID="0008" rol="técnico" area="TFW"></empleado>
+        <empleado UID="0009" rol="técnico" area="PIR"></empleado>
+        <empleado UID="0010" rol="técnico" area="PIR"></empleado>
+        <empleado UID="0011" rol="técnico" area="CCL"></empleado>
+        <empleado UID="0012" rol="técnico" area="CCL"></empleado>
+        <empleado UID="0013" rol="técnico" area="FUT"></empleado>
+        <empleado UID="0014" rol="técnico" area="FUT"></empleado>
+    </empleados>
+    <areas>
+        <area ID="PLA">
+            <nombre>
+                Plaza Mayor
+            </nombre>
+            <decoracion/>
+            <atraccion ID="PLA-01">
+                <nombre_atraccion>
+                    Carrusel
+                </nombre_atraccion>
+                <estado>Operativa</estado>
+                <altura_minima>0.80</altura_minima>
+                <intensidad>Infantil</intensidad>
+                <express>No</express>
+                <datos_tecnicos fecha_ultima_revision="2023-02-20" clave_mantenimiento="1" />
+    
+            </atraccion>
+            <atraccion ID="PLA-02" tipo="montaña rusa">
+                <nombre_atraccion>
+                    Motospeed
+                </nombre_atraccion>
+                <estado>Operativa</estado>
+                <altura_minima>1.20</altura_minima>
+                <altura_maxima>1.95</altura_maxima>
+                <intensidad>Moderado</intensidad>
+                <express>Si</express>
+                <datos_tecnicos fecha_ultima_revision="2023-11-01" clave_mantenimiento="2" />
+            </atraccion>
+            <atraccion ID="PLA-03">
+                <nombre_atraccion>
+                    Caída Libre
+                </nombre_atraccion>
+                <estado>Operativa</estado>
+                <altura_minima>1.40</altura_minima>
+                <altura_maxima>1.95</altura_maxima>
+                <intensidad>Intenso</intensidad>
+                <express>Si</express>
+                <datos_tecnicos fecha_ultima_revision="2024-01-02" clave_mantenimiento="3" />
+            </atraccion>
+        </area>
+        <area ID="TFW">
+            <nombre>
+                The Far West
+            </nombre>
+            <decoracion/>
+            <atraccion ID="TFW-01" tipo="atracción giratoria">
+                <nombre_atraccion>
+                    Saloon
+                </nombre_atraccion>
+                <estado>Operativa</estado>
+                <altura_minima>1.30</altura_minima>
+                <intensidad>Moderado</intensidad>
+                <express>Si</express>
+                <datos_tecnicos fecha_ultima_revision="2021-01-01" clave_mantenimiento="4" />
+            </atraccion>
+            <atraccion ID="TFW-02" tipo="montaña rusa">
+                <nombre_atraccion>
+                    Iron Cowboy
+                </nombre_atraccion>
+                <estado>En obras</estado>
+                <altura_minima>1.20</altura_minima>
+                <altura_maxima>1.90</altura_maxima>
+                <intensidad>Intenso</intensidad>
+                <express>Si</express>
+                <datos_tecnicos clave_mantenimiento="5" />
+            </atraccion>
+            <atraccion ID="TFW-03" tipo="atracción acuática">
+                <nombre_atraccion>
+                    Rápidos de Río Grande
+                </nombre_atraccion>
+                <estado>Operativa</estado>
+                <altura_minima>1.00</altura_minima>
+                <intensidad>Moderado</intensidad>
+                <express>Si</express>
+                <datos_tecnicos fecha_ultima_revision="2024-01-02" clave_mantenimiento="6" />
+            </atraccion>
+        </area>
+        <area ID="PIR">
+            <nombre>
+                Territorio Pirata
+            </nombre>
+            <decoracion/>
+            <atraccion ID="PIR-01">
+                <nombre_atraccion>
+                    Barco Pirata
+                </nombre_atraccion>
+                <estado>Cerrada</estado>
+                <altura_minima>1.20</altura_minima>
+                <intensidad>Moderado</intensidad>
+                <express>No</express>
+                <datos_tecnicos clave_mantenimiento="7" />
+            </atraccion>
+            <atraccion ID="PIR-02">
+                <nombre_atraccion>
+                    Mini Barco
+                </nombre_atraccion>
+                <estado>Operativa</estado>
+                <altura_maxima>1.20</altura_maxima>
+                <intensidad>Infantil</intensidad>
+                <express>No</express>
+                <datos_tecnicos fecha_ultima_revision="2024-02-03" clave_mantenimiento="8" />
+            </atraccion>
+            <atraccion ID="PIR-03" tipo="atracción giratoria">
+                <nombre_atraccion>
+                    El Kraken
+                </nombre_atraccion>
+                <estado>Cerrada</estado>
+                <altura_minima>1.40</altura_minima>
+                <intensidad>Intenso</intensidad>
+                <express>Si</express>
+                <datos_tecnicos fecha_ultima_revision="2023-08-04" clave_mantenimiento="9" />
+            </atraccion>
+            <atraccion ID="PIR-04" tipo="montaña rusa">
+                <nombre_atraccion>
+                    Siete Mares
+                </nombre_atraccion>
+                <estado>Operativa</estado>
+                <altura_minima>1.40</altura_minima>
+                <intensidad>Intenso</intensidad>
+                <express>Si</express>
+                <datos_tecnicos fecha_ultima_revision="2023-12-02" clave_mantenimiento="10" />
+            </atraccion>
+        </area>
+        <area ID="CCL">
+            <nombre>
+                Cool Children Land
+            </nombre>
+            <decoracion/>
+            <atraccion ID="CCL-01" tipo="montaña rusa">
+                <nombre_atraccion>
+                    Pequecoaster
+                </nombre_atraccion>
+                <estado>Operativa</estado>
+                <altura_minima>0.80</altura_minima>
+                <intensidad>Suave</intensidad>
+                <express>Si</express>
+                <datos_tecnicos fecha_ultima_revision="2023-12-02" clave_mantenimiento="11" />
+            </atraccion>
+        </area>
+        <area ID="FUT">
+            <nombre>
+                Calle Futura
+            </nombre>
+            <decoracion/>
+            <atraccion ID="FUT-01" tipo="atracción giratoria">
+                <nombre_atraccion>
+                    Nave Alocada
+                </nombre_atraccion>
+                <estado>Operativa</estado>
+                <altura_minima>1.00</altura_minima>
+                <intensidad>Moderado</intensidad>
+                <express>No</express>
+                <datos_tecnicos fecha_ultima_revision="2023-08-04" clave_mantenimiento="12"/>
+            </atraccion>
+            <atraccion ID="FUT-02" tipo="atracción acuática">
+                <nombre_atraccion>
+                    AquaUFO
+                </nombre_atraccion>
+                <estado>Operativa</estado>
+                <altura_minima>1.00</altura_minima>
+                <altura_maxima>1.90</altura_maxima>
+                <intensidad>Moderado</intensidad>
+                <express>Si</express>
+                <datos_tecnicos fecha_ultima_revision="2019-11-01" clave_mantenimiento="13"/>
+            </atraccion>
+        </area>
+    </areas>
+</parque_tematico>
