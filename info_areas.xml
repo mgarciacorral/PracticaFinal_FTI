@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<parque_tematico xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ej1.xsd">
+<parque_tematico xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="formato_xml.xsd">
     <empleados>
         <empleado UID="0000" rol="responsable de área" area="PLA"></empleado>
         <empleado UID="0001" rol="responsable de área" area="TFW"></empleado>
