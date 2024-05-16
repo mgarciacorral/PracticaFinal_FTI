@@ -19,9 +19,7 @@
     </empleados>
     <areas>
         <area ID="PLA">
-            <nombre>
-                Plaza Mayor
-            </nombre>
+            <nombre>Plaza Mayor</nombre>
             <decoracion/>
             <atraccion ID="PLA-01">
                 <nombre_atraccion>
