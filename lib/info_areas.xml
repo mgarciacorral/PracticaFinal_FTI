@@ -21,46 +21,51 @@
         <area ID="PLA">
             <nombre>Plaza Mayor</nombre>
             <decoracion/>
-            <atraccion ID="PLA-01">
-                <nombre_atraccion>
-                    Carrusel
-                </nombre_atraccion>
-                <estado>Operativa</estado>
-                <altura_minima>0.80</altura_minima>
-                <intensidad>Infantil</intensidad>
-                <express>No</express>
-                <datos_tecnicos fecha_ultima_revision="2023-02-20" clave_mantenimiento="1" />
-    
-            </atraccion>
-            <atraccion ID="PLA-02" tipo="montaña rusa">
-                <nombre_atraccion>
-                    Motospeed
-                </nombre_atraccion>
-                <estado>Operativa</estado>
-                <altura_minima>1.20</altura_minima>
-                <altura_maxima>1.95</altura_maxima>
-                <intensidad>Moderado</intensidad>
-                <express>Si</express>
-                <datos_tecnicos fecha_ultima_revision="2023-11-01" clave_mantenimiento="2" />
-            </atraccion>
-            <atraccion ID="PLA-03">
-                <nombre_atraccion>
-                    Caída Libre
-                </nombre_atraccion>
-                <estado>Operativa</estado>
-                <altura_minima>1.40</altura_minima>
-                <altura_maxima>1.95</altura_maxima>
-                <intensidad>Intenso</intensidad>
-                <express>Si</express>
-                <datos_tecnicos fecha_ultima_revision="2024-01-02" clave_mantenimiento="3" />
-            </atraccion>
+            <atracciones>
+                    <atraccion ID="PLA-01">
+                    <nombre_atraccion>
+                        Carrusel
+                    </nombre_atraccion>
+                    <estado>Operativa</estado>
+                    <altura_minima>0.80</altura_minima>
+                    <intensidad>Infantil</intensidad>
+                    <express>No</express>
+                    <datos_tecnicos fecha_ultima_revision="2023-02-20" clave_mantenimiento="1" />
+        
+                    </atraccion>
+                 <atraccion ID="PLA-02" tipo="montaña rusa">
+                    <nombre_atraccion>
+                        Motospeed
+                    </nombre_atraccion>
+                    <estado>Operativa</estado>
+                    <altura_minima>1.20</altura_minima>
+                    <altura_maxima>1.95</altura_maxima>
+                    <intensidad>Moderado</intensidad>
+                    <express>Si</express>
+                    <datos_tecnicos fecha_ultima_revision="2023-11-01" clave_mantenimiento="2" />
+                 </atraccion>
+                    <atraccion ID="PLA-03">
+                    <nombre_atraccion>
+                        Caída Libre
+                    </nombre_atraccion>
+                    <estado>Operativa</estado>
+                    <altura_minima>1.40</altura_minima>
+                    <altura_maxima>1.95</altura_maxima>
+                    <intensidad>Intenso</intensidad>
+                    <express>Si</express>
+                    <datos_tecnicos fecha_ultima_revision="2024-01-02" clave_mantenimiento="3" />
+                 </atraccion>
+            </atracciones>
+            
         </area>
         <area ID="TFW">
             <nombre>
                 The Far West
             </nombre>
             <decoracion/>
-            <atraccion ID="TFW-01" tipo="atracción giratoria">
+        
+            <atracciones>
+                 <atraccion ID="TFW-01" tipo="atracción giratoria">
                 <nombre_atraccion>
                     Saloon
                 </nombre_atraccion>
@@ -91,13 +96,16 @@
                 <express>Si</express>
                 <datos_tecnicos fecha_ultima_revision="2024-01-02" clave_mantenimiento="6" />
             </atraccion>
+            </atracciones>
+           
         </area>
         <area ID="PIR">
             <nombre>
                 Territorio Pirata
             </nombre>
             <decoracion/>
-            <atraccion ID="PIR-01">
+            <atracciones>
+                <atraccion ID="PIR-01">
                 <nombre_atraccion>
                     Barco Pirata
                 </nombre_atraccion>
@@ -137,13 +145,16 @@
                 <express>Si</express>
                 <datos_tecnicos fecha_ultima_revision="2023-12-02" clave_mantenimiento="10" />
             </atraccion>
+            </atracciones>
+            
         </area>
         <area ID="CCL">
             <nombre>
                 Cool Children Land
             </nombre>
             <decoracion/>
-            <atraccion ID="CCL-01" tipo="montaña rusa">
+            <atracciones>
+                <atraccion ID="CCL-01" tipo="montaña rusa">
                 <nombre_atraccion>
                     Pequecoaster
                 </nombre_atraccion>
@@ -153,13 +164,16 @@
                 <express>Si</express>
                 <datos_tecnicos fecha_ultima_revision="2023-12-02" clave_mantenimiento="11" />
             </atraccion>
+            </atracciones>
+            
         </area>
         <area ID="FUT">
             <nombre>
                 Calle Futura
             </nombre>
             <decoracion/>
-            <atraccion ID="FUT-01" tipo="atracción giratoria">
+            <atracciones>
+                <atraccion ID="FUT-01" tipo="atracción giratoria">
                 <nombre_atraccion>
                     Nave Alocada
                 </nombre_atraccion>
@@ -180,6 +194,8 @@
                 <express>Si</express>
                 <datos_tecnicos fecha_ultima_revision="2019-11-01" clave_mantenimiento="13"/>
             </atraccion>
+            </atracciones>
+            
         </area>
     </areas>
 </parque_tematico>

@@ -113,11 +113,17 @@
         <xs:sequence>
             <xs:element name="nombre" type="xs:string"/>
             <xs:element name="decoracion" type="xs:string"/>
-            <xs:element name="atraccion" type="tipo_atraccion" maxOccurs="unbounded"/>
+            <xs:element name="atracciones" type="tipo_atracciones"/>
+           <!-- <xs:element name="atraccion" type="tipo_atraccion" maxOccurs="unbounded"/> -->
         </xs:sequence>
         <xs:attribute name="ID" type="tipo_ID_area" use="required"/>
     </xs:complexType>
 
+    <xs:complexType name="tipo_atracciones">
+        <xs:sequence>
+            <xs:element name="atraccion" type="tipo_atraccion" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
     <xs:complexType name="tipo_atraccion">
         <xs:sequence>
             <xs:element name="nombre_atraccion" type="xs:string"/>
