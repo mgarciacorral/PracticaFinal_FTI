@@ -34,4 +34,6 @@ body {
   }
   
   /* Estilos adicionales para las secciones y elementos */
-  
+  .fav{
+    background-color: yellow;
+  }
