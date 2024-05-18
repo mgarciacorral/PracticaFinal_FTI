@@ -37,3 +37,8 @@ body {
   .fav{
     background-color: yellow;
   }
+
+  .boton{
+    cursor: pointer;
+  }
+  
