@@ -41,4 +41,8 @@ body {
   .boton{
     cursor: pointer;
   }
+
+  .clicable{
+    cursor: pointer;
+  }
   
