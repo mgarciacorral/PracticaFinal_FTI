@@ -1,14 +1,3 @@
-:root{
-  --main-color: #1a1a1a;
-  --secondary-color: #E1DD06;
-  --tertiary-color: #92E007;
-  --cuarto-color: #E0A807;
-  --quinto-color: #E0C207;
-  --sexto-color: #37E007;
-  --font-family: 'Montserrat', sans-serif;
-  --font-family-2: 'Source Sans 3', sans-serif;
-}
-
 body {
   font-family: sans-serif;
   margin: 0;
@@ -41,7 +30,7 @@ header {
 
 nav {
   list-style: none;
-  padding: 0;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   font-family: 'Source Sans 3', sans-serif;
@@ -61,6 +50,13 @@ nav li:hover {
   box-shadow: 0 0 10px #E1DD06;
 }
 
+.active{
+  background-color: #c9c506;
+  color: #2a2a2a;
+  box-shadow: 0 0 10px #E1DD06;
+  border-radius: 50px;
+}
+
 section {
   padding: 20px;
 }
@@ -69,10 +65,15 @@ h2 {
   margin-bottom: 20px;
 }
 
+.area{
+  margin-bottom: 10vh;
+}
+
 .nombreArea{
-  font-size: 5vh;
+  font-size: 7vh;
   font-weight: bold;
   color: #b7ae72;
+  margin: 10vh;
 }
 
 
@@ -95,7 +96,7 @@ h2 {
 
 .nombreAtraccion{
   color: #c2c0c0;
-  font-size: auto;
+  font-size: 4vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -109,16 +110,27 @@ h2 {
   background-color: #2a2a2a;
 }
 
+#bienvenida{
+  color: #ffffff;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px #E1DD06;
+  padding: 10px;
+  text-align: center;
+}
+
 #imgBienvenida {
   width: 100%;
-  height: 100%;
+  height: 100vh; 
   margin: 0;
   border: 0;
+  background: no-repeat center center/cover;
+  background-image: url('../resurces/header-bg.jpg');
   padding: 0;
 }
 
 .imgAtraccion{ 
-  width: 100%;
+  width: 50vh;
+  height: 50vh;
   border-radius: 10px;
 }
 
