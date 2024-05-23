@@ -178,6 +178,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: 100vh;
 }
 
 #bienvenida{
@@ -187,7 +188,7 @@ h2 {
 
 #imgBienvenida{
   width: 100%;
-  height: auto;
+  height: 100vh;
   background-position: center;
   opacity: 0.4;
 }
