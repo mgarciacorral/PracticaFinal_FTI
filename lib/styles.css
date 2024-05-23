@@ -77,6 +77,12 @@ h2 {
 }
 
 
+#zonaSugerencias{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .listaAtracciones{
   list-style: none;
   display: flex;
