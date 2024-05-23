@@ -15,6 +15,7 @@ header {
   top: 0;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 }
 
 #segopark {
@@ -25,6 +26,7 @@ header {
 }
 
 #segopark:hover {
+  color: #e6e6e6;
   border-radius: 50px;
 }
 
@@ -46,7 +48,7 @@ nav li {
 
 nav li:hover {
   border-radius: 50px;
-  color: #E1DD06;
+  color: #fff;
   box-shadow: 0 0 10px #E1DD06;
 }
 
@@ -55,6 +57,57 @@ nav li:hover {
   color: #2a2a2a;
   box-shadow: 0 0 10px #E1DD06;
   border-radius: 50px;
+}
+
+.apartado{
+  width: 100%;
+  height: 100vh;
+}
+
+h1{
+  color: #ffffff;
+  font-size: 8vh;
+  text-shadow: 2px 2px 4px #E1DD06;
+  padding: 8vh;
+  text-align: center;
+}
+
+#zonaFormulario{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#DOMEspectaculos{
+  color:#ccc;
+}
+
+.parrafo{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  flex-direction: column;
+  align-items: end;
+}
+
+#zonaSugerencias{
+  font-size: 20px;
+  color: #c2c0c0;
+}
+
+.text-box{
+  width: 300px;
+  padding: 10px; 
+  font-size: 16px; 
+  border: 2px solid #ccc; 
+  border-radius: 5px; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+  outline: none;
+}
+
+.text-box:focus{
+  border-color: #E1DD06;
+  box-shadow: 0 0 10px #E1DD06;
 }
 
 section {
@@ -116,36 +169,28 @@ h2 {
   background-color: #2a2a2a;
 }
 
-#bienvenida{
-  color: #ffffff;
-  font-size: 40px;
-  text-shadow: 2px 2px 4px #E1DD06;
-  padding: 10px;
-  text-align: center;
+#DOMBienvenida{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#imgBienvenida {
+#bienvenida{
+  position: absolute;
+  z-index: 1;
+}
+
+#imgBienvenida{
   width: 100%;
-  height: 100vh; 
-  margin: 0;
-  border: 0;
-  background: no-repeat center center/cover;
-  background-image: url('../resurces/header-bg.jpg');
-  padding: 0;
+  height: auto;
+  background-position: center;
+  opacity: 0.4;
 }
 
 .imgAtraccion{ 
   width: 50vh;
   height: 50vh;
   border-radius: 10px;
-}
-
-footer {
-  background-color: #1a1a1a;
-  color: #fff;
-  padding: 10px;
-  bottom: 0;
-  width: 100%;
 }
 
 /* Estilos adicionales para las secciones y elementos */
