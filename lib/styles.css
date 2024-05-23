@@ -77,9 +77,30 @@ h1{
   text-align: center;
 }
 
+h2{
+  color: #ffffff;
+  font-size: 6vh;
+  text-shadow: 2px 2px 4px #E1DD06;
+  padding: 8vh;
+  text-align: center;
+  margin-top: 25vh;
+}
+
+#DOMSugerencias{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#DOMSugerencias form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #zonaFormulario{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -88,15 +109,21 @@ h1{
 }
 
 .parrafo{
+  color: #c2c0c0;
   display: flex;
   flex-wrap: wrap;
   font-size: 20px;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
+}
+
+.parrafo label{
+  margin: 20px;
 }
 
 #zonaSugerencias{
-  font-size: 20px;
+  font-size: 30px;
+  margin-bottom: 10vh;
   color: #c2c0c0;
 }
 
@@ -141,6 +168,10 @@ h2 {
   justify-content: center;
 }
 
+#enviarSugerencia{
+  margin: 2.5vh;
+}
+
 .listaAtracciones{
   list-style: none;
   display: flex;
@@ -176,8 +207,8 @@ h2 {
 
 #DOMBienvenida{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
@@ -204,6 +235,15 @@ h2 {
   box-shadow: 0 0 10px #E1DD06;
   border-radius: 20px;
   padding: 10px;
+}
+
+.boton {
+  font-size: 20px;
+  background-color: #E1DD06;
+  color: #2a2a2a;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #E1DD06;
 }
 
 .boton, .clicable {
