@@ -170,6 +170,12 @@ h2 {
 
 #enviarSugerencia{
   margin: 2.5vh;
+  font-size: 20px;
+  background-color: #E1DD06;
+  color: #2a2a2a;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #E1DD06;
 }
 
 .listaAtracciones{
@@ -235,15 +241,6 @@ h2 {
   box-shadow: 0 0 10px #E1DD06;
   border-radius: 20px;
   padding: 10px;
-}
-
-.boton {
-  font-size: 20px;
-  background-color: #E1DD06;
-  color: #2a2a2a;
-  padding: 10px;
-  border-radius: 20px;
-  box-shadow: 0 0 10px #E1DD06;
 }
 
 .boton, .clicable {
