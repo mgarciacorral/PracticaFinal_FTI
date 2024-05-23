@@ -1,3 +1,8 @@
+html {
+  scrollbar-color: #696969 #000000;
+  scrollbar-width: thin;
+}
+
 body {
   font-family: sans-serif;
   margin: 0;
