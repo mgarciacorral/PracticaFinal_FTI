@@ -360,7 +360,7 @@ h2 {
 }
 
 .popUp{
-  position: absolute;
+  position: fixed;
   top:0;
   left:0;
   display:flex;
@@ -369,7 +369,7 @@ h2 {
   height:100%;
   width: 100%;
   transition: transform 300ms;
-  z-index:-1;
+  z-index:3;
 }
 
 .popUp div{
@@ -381,6 +381,6 @@ h2 {
   color: #aea66d;
   width: 110vh;
   height: 90vh;
-  z-index:1000;
+  z-index:4;
 
 }
