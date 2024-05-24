@@ -236,6 +236,71 @@ h2 {
   border-radius: 10px;
 }
 
+#DOMEspectaculos{
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: left;
+  font-size: 40px;
+}
+
+#DOMEspectaculos div{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 40px;
+  align-content: flex-start;
+}
+
+.areaShows{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  margin-left: 20vh;
+}
+
+.listaHoras{
+  display: block;
+  list-style: none;
+}
+
+.listaHoras li{
+  top: 0;
+  color: antiquewhite;
+  padding: 1vh;
+  align-self: flex-start;
+}
+
+.show{
+  width: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1vh;
+  color: #c2c0c0;
+  font-size: 25px;
+}
+
+.show a{
+  padding: 3vh;
+}
+
+.nombreAreaShows{
+  font-size: 5vh;
+  font-weight: bold;
+  color: #b7ae72;
+  margin: 10vh;
+}
+
+.listaShows{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* Estilos adicionales para las secciones y elementos */
 .fav {
   box-shadow: 0 0 10px #E1DD06;
