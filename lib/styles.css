@@ -293,3 +293,29 @@ h2 {
       font-size: 16px;
   }
 }
+
+.popUp{
+  position: absolute;
+  top:0;
+  left:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  width: 100%;
+  transition: transform 300ms;
+  z-index:-1;
+}
+
+.popUp div{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(77, 77, 75);
+  color: #aea66d;
+  width: 110vh;
+  height: 90vh;
+  z-index:1000;
+
+}
