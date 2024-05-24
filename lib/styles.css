@@ -375,7 +375,7 @@ h2 {
 .popUp div{
   display:flex;
   flex-direction:column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background: rgb(77, 77, 75);
   color: #aea66d;
