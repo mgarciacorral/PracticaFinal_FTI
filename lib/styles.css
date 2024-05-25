@@ -24,10 +24,10 @@ header {
 }
 
 #segopark {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 50px;
   padding: 10px;
-  color: #E1DD06;
+  color: #e1dd06;
 }
 
 #segopark:hover {
@@ -40,7 +40,7 @@ nav {
   padding: 20px;
   display: flex;
   flex-direction: row;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: "Source Sans 3", sans-serif;
 }
 
 nav li {
@@ -54,61 +54,61 @@ nav li {
 nav li:hover {
   border-radius: 50px;
   color: #fff;
-  box-shadow: 0 0 10px #E1DD06;
+  box-shadow: 0 0 10px #e1dd06;
 }
 
-.active{
+.active {
   background-color: #c9c506;
   color: #2a2a2a;
-  box-shadow: 0 0 10px #E1DD06;
+  box-shadow: 0 0 10px #e1dd06;
   border-radius: 50px;
 }
 
-.apartado{
+.apartado {
   width: 100%;
   height: 100vh;
 }
 
-h1{
+h1 {
   color: #ffffff;
   font-size: 8vh;
-  text-shadow: 2px 2px 4px #E1DD06;
+  text-shadow: 2px 2px 4px #e1dd06;
   padding: 8vh;
   text-align: center;
 }
 
-h2{
+h2 {
   color: #ffffff;
   font-size: 6vh;
-  text-shadow: 2px 2px 4px #E1DD06;
+  text-shadow: 2px 2px 4px #e1dd06;
   padding: 8vh;
   text-align: center;
   margin-top: 25vh;
 }
 
-#DOMSugerencias{
+#DOMSugerencias {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#DOMSugerencias form{
+#DOMSugerencias form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#zonaFormulario{
+#zonaFormulario {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#DOMEspectaculos{
-  color:#ccc;
+#DOMEspectaculos {
+  color: #ccc;
 }
 
-.parrafo{
+.parrafo {
   color: #c2c0c0;
   display: flex;
   flex-wrap: wrap;
@@ -117,29 +117,29 @@ h2{
   align-items: center;
 }
 
-.parrafo label{
+.parrafo label {
   margin: 20px;
 }
 
-#zonaSugerencias{
+#zonaSugerencias {
   font-size: 30px;
   margin-bottom: 10vh;
   color: #c2c0c0;
 }
 
-.text-box{
+.text-box {
   width: 300px;
-  padding: 10px; 
-  font-size: 16px; 
-  border: 2px solid #ccc; 
-  border-radius: 5px; 
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
-.text-box:focus{
-  border-color: #E1DD06;
-  box-shadow: 0 0 10px #E1DD06;
+.text-box:focus {
+  border-color: #e1dd06;
+  box-shadow: 0 0 10px #e1dd06;
 }
 
 section {
@@ -150,35 +150,34 @@ h2 {
   margin-bottom: 20px;
 }
 
-.area{
+.area {
   margin-bottom: 10vh;
 }
 
-.nombreArea{
+.nombreArea {
   font-size: 7vh;
   font-weight: bold;
   color: #b7ae72;
   margin: 10vh;
 }
 
-
-#zonaSugerencias{
+#zonaSugerencias {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-#enviarSugerencia{
+#enviarSugerencia {
   margin: 2.5vh;
   font-size: 20px;
-  background-color: #E1DD06;
+  background-color: #e1dd06;
   color: #2a2a2a;
   padding: 10px;
   border-radius: 20px;
-  box-shadow: 0 0 10px #E1DD06;
+  box-shadow: 0 0 10px #e1dd06;
 }
 
-.listaAtracciones{
+.listaAtracciones {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -186,7 +185,7 @@ h2 {
   justify-content: space-evenly;
 }
 
-.listaAtracciones li{
+.listaAtracciones li {
   width: 50vh;
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +194,7 @@ h2 {
   padding: 1vh;
 }
 
-.nombreAtraccion{
+.nombreAtraccion {
   color: #c2c0c0;
   font-size: 4vh;
   width: 100%;
@@ -211,32 +210,32 @@ h2 {
   background-color: #2a2a2a;
 }
 
-#DOMBienvenida{
+#DOMBienvenida {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-#bienvenida{
+#bienvenida {
   position: absolute;
   z-index: 1;
 }
 
-#imgBienvenida{
+#imgBienvenida {
   width: 100%;
   height: 100vh;
   background-position: center;
   opacity: 0.4;
 }
 
-.imgAtraccion{ 
+.imgAtraccion {
   width: 50vh;
   height: 50vh;
   border-radius: 10px;
 }
 
-#DOMEspectaculos{
+#DOMEspectaculos {
   display: block;
   flex-wrap: wrap;
   flex-direction: column;
@@ -244,7 +243,7 @@ h2 {
   font-size: 40px;
 }
 
-#DOMEspectaculos div{
+#DOMEspectaculos div {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -253,7 +252,7 @@ h2 {
   align-content: flex-start;
 }
 
-.areaShows{
+.areaShows {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -261,19 +260,19 @@ h2 {
   margin-left: 20vh;
 }
 
-.listaHoras{
+.listaHoras {
   display: block;
   list-style: none;
 }
 
-.listaHoras li{
+.listaHoras li {
   top: 0;
   color: antiquewhite;
   padding: 1vh;
   align-self: flex-start;
 }
 
-.show{
+.show {
   width: 50vh;
   display: flex;
   flex-wrap: wrap;
@@ -284,18 +283,18 @@ h2 {
   font-size: 25px;
 }
 
-.show a{
+.show a {
   padding: 3vh;
 }
 
-.nombreAreaShows{
+.nombreAreaShows {
   font-size: 5vh;
   font-weight: bold;
   color: #b7ae72;
   margin: 10vh;
 }
 
-.listaShows{
+.listaShows {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -303,84 +302,64 @@ h2 {
 
 /* Estilos adicionales para las secciones y elementos */
 .fav {
-  box-shadow: 0 0 10px #E1DD06;
+  box-shadow: 0 0 10px #e1dd06;
   border-radius: 20px;
   padding: 10px;
 }
 
-.boton, .clicable {
+.boton,
+.clicable {
   cursor: pointer;
 }
 
-/* Media Queries para la Responsividad */
-@media (max-width: 768px) {
-  header {
-      flex-direction: column;
-      height: auto;
-      padding: 10px;
-  }
-
-  #segopark {
-      font-size: 30px;
-      padding: 5px;
-      text-align: center;
-  }
-
-  nav {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  nav li {
-      margin: 5px 0;
-      font-size: 18px;
-  }
-
-  #content {
-      margin-top: 120px;
-      padding: 0%;
-      border: 0;
-      margin-bottom: 0;
-  }
-
-}
-
-@media (max-width: 480px) {
-  header {
-      padding: 5px;
-  }
-
-  #segopark {
-      font-size: 25px;
-  }
-
-  nav li {
-      font-size: 16px;
-  }
-}
-
-.popUp{
+.popUp {
+  border-radius: 50px;
   position: fixed;
-  top:0;
-  left:0;
-  display:flex;
+  top: 0;
+  left: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
-  height:100%;
+  height: 100%;
   width: 100%;
   transition: transform 300ms;
-  z-index:3;
+  z-index: 3;
 }
 
-.popUp div{
-  display:flex;
-  flex-direction:column;
+.cerrarPopUp {
+  background-color: #e1dd06;
+  color: #000000;
+  border-radius: 100px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #e1dd06;
+}
+
+#mensajeError {
+  color: #b7ae72;
+  font-size: 30px;
+  margin-left: 10vh;
+}
+
+.popUp div {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background: rgb(77, 77, 75);
   color: #aea66d;
   width: 110vh;
   height: 90vh;
-  z-index:4;
+  margin: 2vh;
+}
 
+.popUp img {
+  padding: 2vh;
+  border-radius: 25px;
+}
+
+.nombreAtraccionPopUp {
+  font-size: 5vh;
+  margin-bottom: 2vh;
+  color: #e1dd06;
 }

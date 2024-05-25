@@ -1,60 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
-	
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SegoPark</title>
-	<link rel="stylesheet" href="lib/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SegoPark</title>
+    <link rel="stylesheet" href="lib/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
 
-<body>
-	<header>
-		<h1 id="segopark" class="clicable">SegoPark</h1>
-		<nav>
-			<ul>
-				<li class="clicable" id="irAreas">Áreas y Atracciones</li>
-				<li class="clicable" id="irEspectaculos">Espectáculos</li>
-				<li class="clicable" id="irPost">Sugerencias</li>
-			</ul>
-		</nav>
-	</header>
+  <body>
+    <header>
+      <h1 id="segopark" class="clicable">SegoPark</h1>
+      <nav>
+        <ul>
+          <li class="clicable" id="irAreas">Áreas y Atracciones</li>
+          <li class="clicable" id="irEspectaculos">Espectáculos</li>
+          <li class="clicable" id="irPost">Sugerencias</li>
+        </ul>
+      </nav>
+    </header>
 
-	<div id="content">
-		<main id="DOMBienvenida", class="apartado">
-			<h1 id="bienvenida">PARQUE DE ATRACCIONES</h1>
-			<h2 id="bienvenida">¡Tematizado en SEGOVIA!</h2>
-			<img id="imgBienvenida" src="resources/header-bg.jpg" alt="">
-		</main>
+    <div id="content">
+      <main id="DOMBienvenida" , class="apartado">
+        <h1 id="bienvenida">PARQUE DE ATRACCIONES</h1>
+        <h2 id="bienvenida">¡Tematizado en SEGOVIA!</h2>
+        <img id="imgBienvenida" src="resources/header-bg.jpg" alt="" />
+      </main>
 
-		<main id="DOMSugerencias" class="apartado">
-			<h1>
-				Sugerencias
-			</h1>
-			<div id="zonaSugerencias">
-				¡Dejanos una sugerencia y ayudanos a mejorar!
-			</div>
-			<form id="miFormulario" action="https://samuelencinas.dev/sugerencias_parque">
-				<div class="parrafo">
-					<label for="username">Correo </label>
-					<input id="username" type="text" class="text-box" autocomplete="off">
-				</div>
-				<div class="parrafo">
-					<label for="sugerencia">Sugerencia </label>
-					<input id="sugerencia" type="text" class="text-box" autocomplete="off">
-				</div>
-				<button id="enviarSugerencia" class="clicable">Enviar</button>
-			</form>
-		</main>
-	</div>
-	
-	<script src="lib/app.js"></script>
-</body>
+      <main id="DOMSugerencias" class="apartado">
+        <h1>Sugerencias</h1>
+        <div id="zonaSugerencias">
+          ¡Dejanos una sugerencia y ayudanos a mejorar!
+        </div>
+        <form
+          id="miFormulario"
+          action="https://samuelencinas.dev/sugerencias_parque"
+        >
+          <div class="parrafo">
+            <label for="username">Correo </label>
+            <input
+              id="username"
+              type="text"
+              class="text-box"
+              autocomplete="off"
+            />
+          </div>
+          <div class="parrafo">
+            <label for="sugerencia">Sugerencia </label>
+            <input
+              id="sugerencia"
+              type="text"
+              class="text-box"
+              autocomplete="off"
+            />
+          </div>
+          <button id="enviarSugerencia" class="clicable">Enviar</button>
+        </form>
+      </main>
+    </div>
 
+    <script src="lib/app.js"></script>
+  </body>
 </html>
